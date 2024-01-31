@@ -1,4 +1,10 @@
 ---
+- name: Create keyrings directory
+  ansible.builtin.file:
+    	path: /usr/share/keyrings
+        state: directory
+        mode: "0644"
+
 - name: Check if keyring exists
   ansible.builtin.stat:
     path: /usr/share/keyrings/brave-browser-archive-keyring.gpg
