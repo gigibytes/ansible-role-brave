@@ -1,3 +1,4 @@
+# TODO add steps + conditionals here for Fedora/RPM family compatibility. https://brave.com/linux/
 - name: Check if keyring exists
   ansible.builtin.stat:
     path: /usr/share/keyrings/brave-browser-archive-keyring.gpg
